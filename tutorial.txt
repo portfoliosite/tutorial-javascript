@@ -1,0 +1,8 @@
+Git
+Переходим в папку с проектом
+1. git init // инициализация проекта
+2. git config --global user.name "DenisK" // настройка конфига чтоб было видно кто оставляет commit
+3. git config --global user.email denisk@devart.com // настройка конфига чтоб было видно кто оставляет commit
+4. git status // чтоб посмотреть статус файлов
+5. git add -A // добавляем все файлы в index для того чтоб потом закомитить
+6. git commit -a -m "first commit " // коммитим файлы (git создает контрольную точку)

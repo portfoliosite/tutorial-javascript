@@ -7,3 +7,23 @@ Git
 5. git add -A // добавляем все файлы в index для того чтоб потом закомитить
 6. git commit -a -m "first commit " // коммитим файлы (git создает контрольную точку)
 7. git log // посмотреть какие были комиты
+8. git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago' // проверить все коммиты за последние 7 дней
+   git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short // удобный формат лога
+9. git checkout 7d83409 / откат до комита 7d83409
+
+
+Добавьте следующее в файл .gitconfig в вашем $HOME каталоге.
+Для введения сокращений например:
+    git st (git status)
+    git co (git checkout)
+    git ci (git commit)
+    
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p

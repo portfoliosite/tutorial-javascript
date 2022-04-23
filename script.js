@@ -1,50 +1,24 @@
+(function () {
 'use strict';
 
-// console.log(4/0);
-// console.log('string' * 9);
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
-// let something;
-// console.log(something);
+let personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
-// let persone = {
-//     name: "John",
-//     age: 25,
-//     isMarried: false
-// };
+let a = prompt('Один из последних просмотренных фильмов?'),
+    b = prompt('На сколько оцените его?'),
+    c = prompt('Один из последних просмотренных фильмов?'),
+    d = prompt('На сколько оцените его?');
 
-// console.log(persone.name);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
+console.log(personalMovieDB);
 
-// console.log(arr[0]);
-
-// let answer = confirm("Are you here");
-// console.log(answer);
-
-// let answer = +prompt("Есть ли вам 18 ?", "Да");
-// console.log(typeof(answer));
-
-// console.log(typeof(null));
-
-// console.log("arr" + " - object");
-
-// console.log(4 + +" - object");
-
-let incr = 10,
-    decr = 10;
-
-// ++incr;
-// --decr;
-
-console.log(incr++);
-console.log(decr--);
-
-// console.log(++incr);
-// console.log(--decr);
-
-// console.log("2" === 2);
-
-// let isChecked = false,
-//     isClose = false;
-
-// console.log(isChecked || !isClose);
+}());

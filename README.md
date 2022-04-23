@@ -1,2 +1,2 @@
 # tutorial-javascript
-dsfggsdfgsdfgdfgdf
+javascript
